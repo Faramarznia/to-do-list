@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Persian";
+  src: url(./font/persian-badkh@t1.ttf);
+}
+@font-face {
+  font-family: "English";
+  src: url(./font/Asvonaly.otf);
+}
+
+@font-face {
+  font-family: "Persian 2";
+  src: url(./font/Dirooz-FD.ttf);
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  direction: rtl;
+  justify-content: space-between;
+  font-family: English, Persian;
+  margin: 70px;
+  background-image:url(./gradienta\ .jpg);
+  height: 653px;
+}
+/* 
+E7EEE8 
+-color: #e7f6f4;
+#C3CF0A
+#13542D
+(#0A264B, #1E6ED1)
+(#96c7ff, #ffddf4)
+(#A5E4DB, #FED1EE) */
+.card {
+  direction: rtl;
+  display: inline-block;
+  border-radius: 45px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.47);
+  line-height: 20px;
+  padding: 35px;
+  padding-top: 10px;
+  margin: 17px;
+  height: 150px;
+  width: 550px;
+}
+.card:hover {
+  transition: 0.5s;
+  box-shadow: -10px 10px 35px rgb(93, 240, 117), 10px 10px 35px rgb(63, 161, 232);
+}
+
+h1 {
+  color: #040615;
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: rgb(0, 0, 0) 1px 1px 5px;
+}
+h2 {
+  color: #040615;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: rgb(0, 0, 0) 2px 3px 5px;
+}
+
+.btn {
+  font-family: "Persian 2";
+  padding: 8px;
+  border-radius: 40px;
+  background-color: #1B65A7;
+  color: rgb(255, 255, 255);
+  border: 3px solid #ffffff;
+  margin-right: 320px;
+  padding: 7px;
+  width: 225px;
+}
+
+.btn:hover {
+  background-color: rgb(93, 240, 117);
+  transition: 0.5s;
+}
+
+.btn:active {
+  transition: -0.7s;
+  background-color: rgb(63, 161, 232);
+}
+
+.actions {
+  text-align: right;
+}
+
+.modal {
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  background-image:url(./gradienta\ .jpg);
+  padding: 50px;
+  text-align: center;
+  width: 250px;
+  height: 235px;
+  position: fixed;
+  top: 200px;
+  right: 590px;
+  z-index:10;
+}
+
+.title {
+  color: #0a264b;
+  font-size: 40px;
+}
+.btndone {
+  justify-content: center;
+  font-family: "Persian 2";
+  padding: 8px;
+  border-radius: 40px;
+  background-color: #1B65A7;
+  color: rgb(255, 255, 255);
+  border: 3px solid #ffffff;
+
+  padding: 7px;
+  width: 225px;
+}
+.btndone:hover {
+  background-color: rgb(93, 240, 117);
+  transition: 0.5s;
+}
+
+.btndone:active {
+  transition: -0.7s;
+  background-color: rgb(63, 161, 232);
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+} 
+.black-status{
+  color: black;
+}
+.red-status{
+  color: rgb(255, 41, 41);
+}
+.green-status{
+  color: rgb(0, 255, 0);
+}
